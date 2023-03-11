@@ -8,19 +8,18 @@ body {
 }
 
 .img {
-  display: block;
+  display: flex;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 30%;
-  padding-right: 30%;
+  max-height: 0;
+  transition: 0.3s;
+  cursor: pointer;
+  padding-bottom: 1rem;
 }
 
 .accordion {
-  /* display: flex;
-    flex-direction: column;
-    align-items: center; */
-
-  width: 1000px;
+  width: 54rem;
+  margin-bottom: 10rem;
 }
 
 .accordion__title {
@@ -28,7 +27,7 @@ body {
 }
 
 .accordion__container {
-  max-width: 800px;
+  max-width: 64rem;
   margin: 0 auto;
   cursor: pointer;
 }
@@ -58,38 +57,25 @@ span {
   width: 50%;
 }
 
-/* .span:hover ~ .meme__img {
-  scale: 100%;
-  height: auto;
-  transition: 0.3s all;
-} */
-
-img {
-  max-height: 0;
-  transition: 0.3s ease;
-
-  cursor: pointer;
-}
-
-img:active {
-  opacity: 0.6;
-}
-
 input:checked + label > img {
   max-height: 100vh;
-  transition: 0.3s ease;
+  transition: 0.9s;
 }
 
-input:hover + label + img {
+input:hover + label > img {
   max-height: 100vh;
-  transition: 0.3s ease;
+  transition: 0.9s;
 }
 
 img:hover {
   max-height: 100vh;
-  transition: 0.3s ease;
+  transition: 0.9s;
 }
 
 label:active {
   color: blue;
+}
+
+label:active img {
+  opacity: 0.6;
 }
