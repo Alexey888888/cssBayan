@@ -58,10 +58,6 @@ span {
   transition: 0.5s all;
 }
 
-.accordion__container:hover .span-left {
-  color: rgb(50, 43, 43);
-}
-
 .span-left {
   text-align: start;
   display: inline-block;
@@ -119,6 +115,10 @@ input:hover + label .span-right .span__icon {
 
   .span__icon {
     font-size: 2rem;
+  }
+
+  .accordion__container:hover .span-left {
+    color: rgb(50, 43, 43);
   }
 }
 
