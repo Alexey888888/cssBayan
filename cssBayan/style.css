@@ -139,7 +139,7 @@ input:hover + label .span-right .span__icon {
 }
 @media (max-width: 320px) {
   body {
-    font-size: 1.7vh;
+    font-size: 1.5vh;
   }
 
   .span-right {
