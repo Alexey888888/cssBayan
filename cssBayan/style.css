@@ -13,17 +13,15 @@ body {
 
 .img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
+  margin: 0 auto;
+  width: 35%;
   max-height: 0;
   transition: 0.5s;
-  padding-bottom: 1rem;
+  padding: 2vh;
 }
 
 .accordion {
-  width: 70%;
-  margin-bottom: 10rem;
+  width: 50%;
 }
 
 .accordion__container {
@@ -37,7 +35,7 @@ input {
 
 label {
   border-top: 0.2vh solid #8b8c88cf;
-  padding-top: 2.5vh;
+  padding: 2.5vh 0;
 }
 
 span {
@@ -108,7 +106,7 @@ input:hover + label .span-right .span__icon {
 
 @media (min-width: 820px) {
   body {
-    font-size: 4vh;
+    font-size: 3vh;
   }
 
   label {
@@ -116,7 +114,7 @@ input:hover + label .span-right .span__icon {
   }
 
   .span__icon {
-    font-size: 6vh;
+    font-size: 4vh;
   }
 
   .accordion__container:hover .span-left {
@@ -134,7 +132,7 @@ input:hover + label .span-right .span__icon {
   }
 
   .span__icon {
-    font-size: 4vh;
+    font-size: 3vh;
   }
 }
 @media (max-width: 320px) {
