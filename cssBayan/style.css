@@ -2,7 +2,6 @@ body {
   background: #bed4ab;
   font-family: "Bowlby One", cursive;
   color: rgb(50, 43, 43);
-  font-size: 1.2rem;
 }
 
 .wrapper {
@@ -30,6 +29,7 @@ body {
   max-width: 64rem;
   margin: 0 auto;
   cursor: pointer;
+  color: #6a5acd;
 }
 
 input {
@@ -53,19 +53,23 @@ span {
   opacity: 0;
 }
 
-.span__icon {
-  font-size: 2rem;
-}
-
 .accordion__container:hover .span-right {
   opacity: 1;
   transition: 0.5s all;
+}
+
+.accordion__container:hover .span-left {
+  color: rgb(50, 43, 43);
 }
 
 .span-left {
   text-align: start;
   display: inline-block;
   width: 50%;
+}
+
+.span__icon {
+  color: rgb(50, 43, 43);
 }
 
 input:checked + label > img {
@@ -83,11 +87,6 @@ img:hover {
   transition: 0.5s;
 }
 
-label:active {
-  color: rgb(9, 9, 213);
-  transition: 0.5s all;
-}
-
 label:active > img {
   opacity: 0.6;
 }
@@ -98,10 +97,29 @@ input:checked + label > .span-right .span__icon {
   transition: 0.5s all;
 }
 
+input:checked + label > .span-left {
+  color: rgb(50, 43, 43);
+}
+
+label:active > span {
+  color: rgb(9, 9, 213) !important;
+  transition: 0.5s all;
+}
+
 input:hover + label .span-right .span__icon {
   display: inline-block;
   transform: rotate(45deg);
   transition: 0.5s all;
+}
+
+@media (width > 820px) {
+  body {
+    font-size: 1.2rem;
+  }
+
+  .span__icon {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 820px) {
@@ -112,6 +130,10 @@ input:hover + label .span-right .span__icon {
   .span-right {
     opacity: 1;
   }
+
+  .span__icon {
+    font-size: 1.8rem;
+  }
 }
 @media (max-width: 320px) {
   body {
@@ -120,5 +142,9 @@ input:hover + label .span-right .span__icon {
 
   .span-right {
     opacity: 1;
+  }
+
+  .span__icon {
+    font-size: 1.6rem;
   }
 }
